@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- style.css -->
-    <link rel="stylesheet" href="script.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
         <!-- Header -->
@@ -26,8 +26,8 @@
                                     <div class="card-body">
                                             <h5 class="card-title">Search for a City:</h5>
                                               <form class="form-inline my-2 my-lg-0">
-                                                <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                                <input id="search" class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                                                <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                                               </form>
                                               <br>
                                           <!-- Search History-->
@@ -49,12 +49,12 @@
                                  <!-- Todays Forecast -->
                                   <div class="col-8">
                                         <div class="card">
-                                                <div class="card-body">
-                                                  <h2>City (x/xx/xxxx)</h2>
+                                                <div id="card" class="card-body">
+                                                  <!-- <h2>City (x/xx/xxxx)</h2>
                                                   <h5>Tempurature:</h5>
                                                   <h5>Humidity:</h5>
                                                   <h5>Wind Speed:</h5>
-                                                  <h5>UV Index:</h5>
+                                                  <h5>UV Index:</h5> -->
                                                 </div>
                                               </div>
                                               <!-- Five Day Forecast -->
