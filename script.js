@@ -20,12 +20,14 @@ function runQuery(queryURL){
     $.ajax({url: queryURL, method: "GET"})
         .done(function(response) {
 
+            $('#card').empty();
+
             // Start Dumping to HTML Here
             var cardSection = $('<div>');
             cardSection.addClass("card-body");
             $('#card').append(cardSection);
 
-            (cardSection).append( "<h2>" + response.name + "</h2>");
+            (cardSection).append( "<h2>" + response.name  + " x/xx/xxxx " + "</h2>");
             (cardSection).append( "<h5>" + "Tempurature: " + response.main.temp + "</h5>");
             (cardSection).append( "<h5>" + "Humidity: " + response.main.humidity + "</h5>");
             (cardSection).append( "<h5>" + "Wind Speed: " + response.wind.speed + "</h5>");
