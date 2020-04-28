@@ -33,7 +33,7 @@ function returnCurrentWeather(cityName) {
 }
 
 function returnWeatherForecast(cityName) {
-  let queryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&APPID=${apiKey}`;
+  let queryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=imperial&APPID=${apiKey}`;
 
   $.get(queryURL).then(function (response) {
     let forecastInfo = response.list;
